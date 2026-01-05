@@ -27,4 +27,4 @@ COPY . .
 EXPOSE 3000
 
 # Command to run explorer
-CMD ["sh", "-c", "npm run build && serve -s build -l 3000"]
+CMD ["sh", "-c", "npx update-browserslist-db@latest && npm run build && serve -s build -l 3000"]
